@@ -24,7 +24,7 @@ myQAModel = DistilBertForQuestionAnswering.from_pretrained(model_path)
 QAPipeline = QuestionAnsweringPipeline(model = myQAModel,tokenizer = tokenizer)
 
 # This is a markdown message at the beginning of my application in which I'm introducing myself and explaining the question. You should add whatever message you want to. 
-st.markdown("Project Devdoot")
+st.title("Project Devdoot")
 st.markdown("AI Researcher and Natural Language Processing Engineer")
 
 
