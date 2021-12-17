@@ -36,7 +36,7 @@ question = st.text_input("Question", "")
 if context:
     # Execute question against paragraph
     if question:
-        outputs = QAPipeline(question = question,context = context,topk = 3, max_seq_len = 512)
+        outputs = QAPipeline(question = question,context = context,topk = 30, max_seq_len = 512)
         answer = outputs[0]["answer"]
         output_answer = st.text_area("Answer",answer)
         
